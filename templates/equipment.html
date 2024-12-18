@@ -1,0 +1,22 @@
+<table>
+    <thead>
+    <tr>
+        <th style="width:10%">Название</th>
+        <th style="width:10%">Монтируемая ёмкость</th>
+        <th style="width:10%">Задействованная ёмкость</th>
+        <th style="width:10%">Свободно</th>
+        <th style="width:20%">Тип</th>
+        <th style="width:40%">Информация</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    {% for row in data_equipment %}
+    <tr>
+        {% for cell in row %}
+        <td>{{ cell }}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
